@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #eaf3f9; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 800px;
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.calculator {
+    display: flex;
+    width: 100%;
+    border-radius: 15px; /* Ensure both sides have rounded corners */
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 30px;
+    width: 50%;
+    background-color: #fff;
+    border-top-left-radius: 15px;  /* Rounded left-top corner */
+    border-bottom-left-radius: 15px;  /* Rounded left-bottom corner */
+}
+
+.result-container {
+    width: 50%;
+    background-color: #0f3b47; /* Dark blue background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-top-right-radius: 15px;  /* Rounded right-top corner */
+    border-bottom-right-radius: 15px;  /* Rounded right-bottom corner */
+}
+
+.result-info {
+    text-align: center;
+}
+
+.result-info img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.result-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.clear {
+    float: right;
+    font-size: 14px;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.split-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.split-input div {
+    width: 48%;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #0077cc;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group label {
+    font-size: 16px;
+}
+
+.calculate-btn {
+    background-color: #c5e348;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculate-btn:hover {
+    background-color: #a8c831;
+}
